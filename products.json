@@ -1,0 +1,54 @@
+[
+
+    {
+        "id": 1,
+        "name":" Beef Burger",
+        "price": 20,
+        "image": "/imgs/20230525-SEA-Wagyu-Burger-Amanda-Suarez-hero-54009c50b715486892bbed7a0edc829c.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Chicken Burger",
+        "price": 25,
+        "image": "/imgs/Crispy-Chicken-Burger-square-FS-4518.jpg"
+    },
+    {
+        "id": 3,
+        "name":" Grilled Salmon",
+        "price": 29,
+        "image": "/imgs/featured-grilled-salmon-recipe.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Shrimps",
+        "price": 40,
+        "image": "/imgs/Shrimp-Peas-_-Rice-9-500x500.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Italian Salad",
+        "price": 30,
+        "image": "/imgs/Italian-Salad-14.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Grilled Chicken",
+        "price": 30,
+        "image": "/imgs/Grilled-Chicken-Overhead.jpg"
+    },
+    {
+        "id": 7,
+        "name":" Beef",
+        "price": 10,
+        "image": "/imgs/Beef_230118_0436.jfif"
+    },
+    {
+        "id": 8,
+        "name":" Spaghetti",
+        "price": 30,
+        "image": "/imgs/images.jfif"
+    }
+
+
+
+]

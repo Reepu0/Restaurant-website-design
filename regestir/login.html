@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="card">
+            <h2>Login Form</h2>
+            <form action="#">
+              <div class="form">
+        
+                <label for="email"> E-mail</label><br>
+                <input type="email" class="form.control" id="email" name="email" placeholder="Enter Your E-mail">
+                <i class='bx bx-envelope'></i>
+              </div>
+              <div class="form">
+                <br>
+                <label for="password"> Password</label><br>
+                <input type="Password" class="form.control" id="password" name="password" placeholder="Enter Your Password">
+                <i class='bx bxs-lock-alt'></i>
+
+              </div>
+              <div class="text">
+                <br>
+                <button type="button" onclick="saveData()" class="btn btn-primary" id="save_btn" > Submit </button>
+                <button type="reset"  class="btn btn-warning" id="" > Reset </button>
+                <a href="/regestir/registration.html">Go to rigester</a>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function saveData(){
+        let  email, password;
+        email =document.getElementById("email").value;
+        password =document.getElementById("password").value;
+
+       
+
+
+       let user_records=new Array();
+       user_records=JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
+       if(user_records.some((v)=> {
+        return v.email==email && v.password==password
+
+       })){
+        alert("Login Successful")
+        let current_user=user_records.filter ((v)=>{
+            return v.email==email && v.password==password    
+        })[0]
+        localStorage.setItem("name",current_user.name);
+        localStorage.setItem("email",current_user.email);
+        window.location.href="profile.html";
+       }
+       else{
+        alert("Login Fail");
+       }
+    }
+    
+</script>
+</html>
